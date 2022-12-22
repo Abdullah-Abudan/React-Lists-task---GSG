@@ -1,13 +1,63 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
+span{
+  color: #5b5b5b;
+  font-size: 1.5em;
+}
+button{
+  margin-right: 6px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 12px 24px;
+  text-align: center; 
+  user-select: none;
+  font-weight: bold;
+  font-family: 'BlinkMacSystemFont';
+}
+button.green-color{
+  background-color: #48c78e;
+}
+button.green-color:hover{
+  background-color: #3ec488da;
+}
+button.green-color:focus{
+  box-shadow: 0 0 0 0.125em rgba(72, 199, 142, 0.316);
+}
+/* لون فاتح ولون غامق عند الهوفر وعند الآكتف */
+button.green-color:active{ 
+ background-color: #3abb82;
+}
+button.red-color{
+  background-color: #f14668;
+}
+button.red-color:hover
+{
+  background-color: #f03a5ed6;
+}
+button.red-color:active{
+  background-color: #ef2e55;
+}
+button.red-color:focus{
+  box-shadow:0 0 0 0.125em rgba(241, 70, 104, 0.317);
+}
+.counter {
+    padding: 16px;
+    display: flex;
+    align-items: center;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+.counter-controls {
+    display: flex;
+    align-items:center ;
+    margin-left: 12px;
+  }
+
+
+
